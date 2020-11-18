@@ -28,7 +28,7 @@ spring:
 
 logging:
   level:
-    com.yc.springcloud812: debug
+    com.yc.piclib: debug
 
 eureka:
   client: # 客户端进行Eureka注册的配置
@@ -79,7 +79,7 @@ spring:
 
 logging:
   level:
-    com.yc.springcloud812: debug
+    com.yc.piclib: debug
 
 eureka:
   client: # 客户端进行Eureka注册的配置
