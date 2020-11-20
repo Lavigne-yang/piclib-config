@@ -6,4 +6,14 @@ spring:
 ----
 server:
   port: 9001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:a@localhost:7301/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: base-microsercice-hystrix-dashboard
   
+spring:
+  application:
+    name: base-microsercice-hystrix-dashboard
