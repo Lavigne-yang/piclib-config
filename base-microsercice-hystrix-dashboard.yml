@@ -6,14 +6,21 @@ spring:
 ----
 server:
   port: 9001
+
 eureka:
   client:
+#     fetch-registry: false
+#     register-with-eureka: false
     service-url:
-      defaultZone: http://admin:a@localhost:7301/eureka
+        defaultZone: http://admin:a@localhost:1001/eureka
   instance:
     prefer-ip-address: true
-    instance-id: base-microsercice-hystrix-dashboard
-  
+    instance-id: base-microsercice-hystrix-dashboard    
 spring:
+  profiles: dev
+  security:
+    user:
+      name: admin
+      password: a
   application:
     name: base-microsercice-hystrix-dashboard
