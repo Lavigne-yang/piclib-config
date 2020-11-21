@@ -9,7 +9,16 @@ eureka:
         defaultZone: http://admin:a@localhost:1001/eureka
   instance:
     prefer-ip-address: true
-    instance-id: base-microsercice-hystrix-dashboard  
+    instance-id: base-microsercice-hystrix-dashboard
+    
+    
+endpoints: #启用/ restart端点重新启动应用程序上下文
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+    
+    
 spring:
   profiles: dev
   security:
