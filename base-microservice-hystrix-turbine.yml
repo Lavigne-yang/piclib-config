@@ -16,8 +16,8 @@ turbine:
   
  spring:
   profiles: dev
-  security:
-    user:
-      name: admin
-      password: a
+#   security:
+#     user:
+#       name: admin
+#       password: a
   
