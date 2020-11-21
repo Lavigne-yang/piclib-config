@@ -6,7 +6,7 @@ eureka:
       defaultZone: http://admin:a@eureka1:1001/eureka
   instance:
     prefer-ip-address: true
-    instance-id: base-microservice-hystrix-turbine-00001
+    instance-id: base-microservice-hystrix-turbine-00001002
 
 turbine:
   app-config: base-microservice-provider  #需要收集信息的服务名
